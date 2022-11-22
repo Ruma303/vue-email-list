@@ -4,7 +4,7 @@ const app = new Vue ({
          email: '',
          arrEmails:[],
      }, methods: {
-          renderEmails() {
+          renderEmails(i) {
             for (let i=0; i<10; i++) {
                  //API richiesta di una mail
                 axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
@@ -15,7 +15,7 @@ const app = new Vue ({
                  }); 
             }; 
             console.log(this.arrEmails);
-            // this.arrEmails[''];
+            this.arrEmails[i] = '';
          },
      },
  });

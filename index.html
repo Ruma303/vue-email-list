@@ -22,8 +22,8 @@
 <body>
     <div id="app" class="container d-flex justify-content-center align-items-center m-auto flex-column">
         <button @click="renderEmails" class="mt-5 mb-2">Genera lista email</button>
-        <ul v-for="(email, index) in arrEmails">
-            <li>{{index}}: {{email}}</li>
+        <ul>
+            <li v-for="(email, index) in arrEmails">{{index+1}}a mail: {{email}}</li>
         </ul>
     </div>
 </body>
