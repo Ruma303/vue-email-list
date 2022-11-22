@@ -15,8 +15,8 @@ const app = new Vue ({
                  }); 
             }; 
             console.log(this.arrEmails);
-            this.arrEmails[i] = '';
+            this.arrEmails = this.axiosEmail.data.response; //Reset array al clik non funziona
          },
      },
  });
- 
+  
